@@ -1,4 +1,9 @@
 *{
     margin: 5px;
   }
-  
+.container{
+  border: 2px solid black;
+}
+p{
+  text-align: center;
+}
