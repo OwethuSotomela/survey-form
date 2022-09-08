@@ -14,47 +14,57 @@
         <div class="row">
             <div class="col-12">
                 <h1 id="title">Survey Form</h1>
-                <p id="description">Please complete this survey to rate our services and suggest ways we can improve it
-                </p>
-                <br>
-                <form action="./html/survey-form.html" method="GET">
-                    <label for="name" id="name-label">Name</label>
-                    <input type="text" id="name" placeholder="Enter your name" required minlength="4" maxlength="8"
-                        size="15">
-                    <label for="email" id="email-label">Email</label>
-                    <input type="email" id="email" placeholder="Enter a valid email address"
-                        size="30" required>
-                    <label for="number" id="number-label">Number</label>
-                    <input type="text" id="number" placeholder="Enter contact number" min="1" max="20" size="15">
-                    <br>
-                    <select id="dropdown">
-                        <option>Select your profession</option>
-                        <option>Doctor</option>
-                        <option>Pilot</option>
-                        <option>Software Engeneer</option>
-                        <option>Teacher</option>
-                    </select>
-                    <br>
-                    <p>Please rate our services:</p>
-                    <label for="poor">Poor</label>
-                    <input type="radio" name="radioItem" value="radioItem">
-                    <label for="good">Good</label>
-                    <input type="radio" name="radioItem" value="radioItem">
-                    <label for="Excellent">Excellent</label>
-                    <input type="radio" name="radioItem" value="radioItem">
-                    <br>
-                    <p>Select your gender:</p>
-                    <label for="male">Male</label>
-                    <input type="checkbox" id="male" name="male" value="male">
-                    <label for="female">Female</label>
-                    <input type="checkbox" id="female" name="female" value="female">
-                    <label for="checkbox">Other</label>
-                    <input type="checkbox" id="other" name="checkbox" value="other">
-                    <br>
-                    <textarea id="textarea" name="textarea" value="textarea"></textarea>
-                    <br>
-                    <button id="submit">Submit</button>
-                </form>
+                <main>
+                    <section>
+                        <p id="description">Please complete this survey to rate our services and suggest ways we can
+                            improve
+                            it
+                        </p>
+                        <br>
+                        <form action="./html/survey-form.html" method="GET">
+                            <label for="name" id="name-label">Name</label>
+                            <input type="text" id="name" placeholder="Enter your name" required minlength="4"
+                                maxlength="8" size="15">
+                            <label for="email" id="email-label">Email</label>
+                            <input type="email" id="email" placeholder="Enter a valid email address" size="30" required>
+                            <label for="number" id="number-label">Number</label>
+                            <input type="text" id="number" placeholder="Enter contact number" min="1" max="20"
+                                size="15">
+                            <br>
+                            <select id="dropdown">
+                                <option>Select your profession</option>
+                                <option>Doctor</option>
+                                <option>Pilot</option>
+                                <option>Software Engeneer</option>
+                                <option>Teacher</option>
+                            </select>
+                            <br>
+                            <fieldset>
+                                <legend>Please rate our services:</legend>
+                                <label for="poor">Poor</label>
+                                <input type="radio" name="radioItem" value="radioItem">
+                                <label for="good">Good</label>
+                                <input type="radio" name="radioItem" value="radioItem">
+                                <label for="Excellent">Excellent</label>
+                                <input type="radio" name="radioItem" value="radioItem">
+                            </fieldset>
+                            <br>
+                            <fieldset>
+                                <legend>Select your gender:</legend>
+                                <label for="male">Male</label>
+                                <input type="checkbox" id="male" name="male" value="male">
+                                <label for="female">Female</label>
+                                <input type="checkbox" id="female" name="female" value="female">
+                                <label for="checkbox">Other</label>
+                                <input type="checkbox" id="other" name="checkbox" value="other">
+                            </fieldset>
+                            <br>
+                            <textarea id="textarea" name="textarea" value="textarea"></textarea>
+                            <br>
+                            <button id="submit">Submit</button>
+                        </form>
+                    </section>
+                </main>
             </div>
         </div>
     </div>
