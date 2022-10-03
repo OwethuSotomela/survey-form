@@ -6,9 +6,24 @@
   border: 2px solid black;
 }
 
-h3 {
-  text-align: center;
-}
-.textareaInput, .textareaLabel{
+.textareaInput,
+.textareaLabel {
   display: block;
+}
+
+input {
+  margin-bottom: 15px;
+}
+
+fieldset {
+  margin-bottom: 15px;
+}
+
+textarea{
+  margin-bottom: 15px;
+}
+
+p{
+  margin-bottom: 15px;
+  margin-top: 15px;
 }

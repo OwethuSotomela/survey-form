@@ -2,10 +2,10 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Survey Form</title>
 </head>
 
@@ -16,19 +16,20 @@
                 <h1 id="title">Survey Form</h1>
                 <main>
                     <section>
-                        <p id="description">Please complete this survey to rate it and suggest ways I can
-                            improve
-                            it
+                        <p id="description">
+                            Please complete this survey to rate it and suggest ways I can
+                            improve it
                         </p>
                         <form action="./html/survey-form.html" method="GET">
                             <label for="name" id="name-label">Name</label>
                             <input type="text" id="name" placeholder="Enter your name" required minlength="4"
-                                maxlength="8" size="30">
+                                maxlength="8" size="30" />
                             <label for="email" id="email-label">Email</label>
-                            <input type="email" id="email" placeholder="Enter a valid email address" size="30" required>
+                            <input type="email" id="email" placeholder="Enter a valid email address" size="30"
+                                required />
                             <label for="number" id="number-label">Number</label>
                             <input type="text" id="number" placeholder="Enter contact number" min="1" max="20"
-                                size="30">
+                                size="30" />
                             <select id="dropdown">
                                 <option>Select your profession</option>
                                 <option>Doctor</option>
@@ -36,29 +37,29 @@
                                 <option>Software Developer</option>
                                 <option>Teacher</option>
                             </select>
-                            <br>
+                            <br />
                             <fieldset>
                                 <legend>Please rate our services:</legend>
                                 <label for="poor">Poor</label>
-                                <input type="radio" name="radioItem" value="radioItem">
+                                <input type="radio" name="radioItem" value="radioItem" />
                                 <label for="good">Good</label>
-                                <input type="radio" name="radioItem" value="radioItem">
+                                <input type="radio" name="radioItem" value="radioItem" />
                                 <label for="Excellent">Excellent</label>
-                                <input type="radio" name="radioItem" value="radioItem">
+                                <input type="radio" name="radioItem" value="radioItem" />
                             </fieldset>
                             <fieldset>
                                 <legend>Select your gender:</legend>
                                 <label for="male">Male</label>
-                                <input type="checkbox" id="male" name="male" value="male">
+                                <input type="checkbox" id="male" name="male" value="male" />
                                 <label for="female">Female</label>
-                                <input type="checkbox" id="female" name="female" value="female">
+                                <input type="checkbox" id="female" name="female" value="female" />
                                 <label for="checkbox">Other</label>
-                                <input type="checkbox" id="other" name="checkbox" value="other">
+                                <input type="checkbox" id="other" name="checkbox" value="other" />
                             </fieldset>
-                            <label for="textarea" class="textareaLabel">Please share your thoughts about this form</label>
-                            <textarea id="textarea" class="textareaInput" name="textarea" value="textarea" rows="3" cols="30"
-                            placeholder="Your comments here..."></textarea>
-                            <br>
+                            <label for="textarea" class="textareaLabel">Please share your thoughts about this
+                                form</label>
+                            <textarea id="textarea" class="textareaInput" name="textarea" value="textarea" rows="3"
+                                cols="30" placeholder="Your comments here..."></textarea>
                             <button id="submit">Submit</button>
                         </form>
                     </section>
