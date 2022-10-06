@@ -27,3 +27,9 @@ p{
   margin-bottom: 15px;
   margin-top: 15px;
 }
+::placeholder{
+  text-align: center;
+}
+select{
+  width: 17em;
+}

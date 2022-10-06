@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Survey Form</title>
 </head>
 
@@ -20,16 +20,16 @@
                             Please complete this survey to rate it and suggest ways I can
                             improve it
                         </p>
-                        <form action="./html/survey-form.html" method="GET">
-                            <label for="fname" id="name-label">Full-Name</label>
-                            <input type="text" id="fname" placeholder="Enter your full name" required minlength="4"
-                                maxlength="8" size="30" />
-                            <label for="email" id="email-label">Email</label>
-                            <input type="email" id="email" placeholder="Enter a valid email address" size="30"
-                                required />
-                            <label for="number" id="number-label">Number</label>
-                            <input type="text" id="number" placeholder="Enter contact number" min="1" max="20"
-                                size="30" />
+                        <form action="./php/processed.php" method="GET">
+                            <label for="fname">Full-Name</label>
+                            <input type="text" id="fname" name="fname" placeholder="Enter your full name" required
+                                minlength="4" maxlength="8" size="30" />
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="Enter a valid email address"
+                                size="30" required />
+                            <label for="number">Number</label>
+                            <input type="text" id="number" name="number" placeholder="Enter contact number" min="1"
+                                max="20" size="30" />
                             <select id="dropdown">
                                 <option>Select your profession</option>
                                 <option>Doctor</option>
@@ -37,15 +37,14 @@
                                 <option>Software Developer</option>
                                 <option>Teacher</option>
                             </select>
-                            <br />
                             <fieldset>
                                 <legend>Please rate our services:</legend>
                                 <label for="poor">Poor</label>
-                                <input type="radio" id="poor" name="radioItem" value="radioItem"/>
+                                <input type="radio" id="poor" name="radioItem" value="radioItem" />
                                 <label for="good">Good</label>
-                                <input type="radio" id="good" name="radioItem" value="radioItem"/>
+                                <input type="radio" id="good" name="radioItem" value="radioItem" />
                                 <label for="excellent">Excellent</label>
-                                <input type="radio" id="excellent" name="radioItem" value="radioItem"/>
+                                <input type="radio" id="excellent" name="radioItem" value="radioItem" />
                             </fieldset>
                             <fieldset>
                                 <legend>Select your gender:</legend>
@@ -60,13 +59,16 @@
                                 form</label>
                             <textarea id="textarea" class="textareaInput" name="textarea" value="textarea" rows="3"
                                 cols="30" placeholder="Your comments here..."></textarea>
-                            <button id="submit">Submit</button>
+                            <button id="submit" name="submit">Submit</button>
+                            <!-- here  -->
+                            
                         </form>
                     </section>
                 </main>
             </div>
         </div>
     </div>
+    <script src="./app.js"></script>
 </body>
 
 </html>
