@@ -33,8 +33,8 @@ Steps
 1. Download and Install XAMPP:
 
 * Download XAMPP from the official website.
-* * Install it on your system following the provided instructions.
-* * Set Up Project Directory:
+ * Install it on your system following the provided instructions.
+ * Set Up Project Directory:
 
 2. Create a directory for your project, e.g., survey-form.
 * Inside the project directory, create subdirectories for CSS and PHP files.
@@ -45,6 +45,9 @@ Place Files:
 * Place processed.php in the php/ directory.
 4. Configure PHP Path (if using FiveServer):
 
-5. Create a fiveserver.config.js file in the root of the project directory.
+* Create a fiveserver.config.js file in the root of the project directory.
 * Add the path to the PHP executable in the configuration file.
 * Example fiveserver.config.js:
+
+
+
