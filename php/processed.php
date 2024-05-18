@@ -5,37 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>Survey-form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+    <title>Processed Data</title>
 </head>
 
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h1>Processed Data</h1>
-                <main>
-                    <section class="submission">
-                        <!-- <p>Thank you for taking time to rate our services</p> -->
-                        <?php
-                        if(isset( $_POST['number']))
-                        {
-                            $fname = $_POST['fname'];
-                            $email = $_POST['email'];
-                            $number = $_POST['number'];
-                            $submit = $_POST['submit'];
+        <h1 class="text-center">Processed Data</h1>
+        <main>
+            <section class="submission">
+                <?php
+                if (isset($_POST['submit'])) {
+                    $fname = htmlspecialchars($_POST['fname']);
+                    $email = htmlspecialchars($_POST['email']);
+                    $number = htmlspecialchars($_POST['number']);
+                    $profession = htmlspecialchars($_POST['profession']);
+                    $rating = htmlspecialchars($_POST['rating']);
+                    $gender = isset($_POST['gender']) ? implode(', ', $_POST['gender']) : 'Not specified';
+                    $comments = htmlspecialchars($_POST['comments']);
 
-                            echo "<p>Name: $fname</p>";
-                            echo "<p>Email: $email</p>";
-                            echo "<p>Number: $number</p>";
-                            echo "<p>$submit</p>";
-                        }
-                        ?>
-                    </section>
-                </main>
-            </div>
-        </div>
+                    echo "<p><strong>Name:</strong> $fname</p>";
+                    echo "<p><strong>Email:</strong> $email</p>";
+                    echo "<p><strong>Number:</strong> $number</p>";
+                    echo "<p><strong>Profession:</strong> $profession</p>";
+                    echo "<p><strong>Rating:</strong> $rating</p>";
+                    echo "<p><strong>Gender:</strong> $gender</p>";
+                    echo "<p><strong>Comments:</strong> $comments</p>";
+                }
+                ?>
+            </section>
+        </main>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>

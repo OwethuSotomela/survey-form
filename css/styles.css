@@ -1,36 +1,19 @@
-* {
-  margin: 5px;
+body {
+  background-color: #f8f9fa;
 }
 
 .container {
-  border: 2px solid black;
+  margin-top: 50px;
+  padding: 30px;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  background-color: #ffffff;
 }
 
-.textareaInput,
-.textareaLabel {
-  display: block;
+.form-group {
+  margin-bottom: 1.5rem;
 }
 
-input {
-  margin-bottom: 15px;
-  text-align: center;
-}
-
-fieldset {
-  margin-bottom: 15px;
-}
-
-textarea{
-  margin-bottom: 15px;
-}
-
-p{
-  margin-bottom: 15px;
-  margin-top: 15px;
-}
-::placeholder{
-  text-align: center;
-}
-select{
-  width: 17em;
+#submit {
+  margin-top: 20px;
 }
